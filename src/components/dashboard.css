@@ -1,4 +1,3 @@
-
 html, body {
   margin: 0;
   padding: 0;
@@ -8,7 +7,7 @@ html, body {
   color: white;
   font-family: sans-serif;
   box-sizing: border-box;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -18,9 +17,12 @@ html, body {
   padding: 2rem;
   background-color: #0A192F;
   color: #ffffff;
-  
 }
 
+.name1 {
+  color: white;
+  font-weight: bolder;
+}
 
 .cursor-glow {
   position: fixed;
@@ -32,251 +34,342 @@ html, body {
   mix-blend-mode: screen;
   filter: blur(120px);
   z-index: 1;
-  
 }
-
-
-.intro{
-  
-  display: flex;
-  justify-content: center;  
-  align-items: center;  
-  margin-top: 2rem;   
- 
-    
-}
-
-     
-.name{
-
-    font-weight: bolder;
-    font-size: 4rem;
-    color: #CCD6F6;
-}
-
-
-
-.fullstack{
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-}
-
-.aspiring{
-  color:#CCD6F6; ;
-}
-  
 
 .icons {
- display: flex;
+  display: flex;
   gap: 35px;
   z-index: 10;
-  
 }
 
 .icons i {
-  font-size: 1.5rem; /* Increase size */
+  font-size: 1.5rem;
   transition: transform 0.3s ease, color 0.3s ease;
   cursor: pointer;
   color: white;
 }
 
 .icons i:hover {
-  
-  transform: scale(1.3); /* Slight zoom on hover */
-  cursor: pointer;
+  transform: scale(1.3);
   color: #00ffff;
 }
 
-
-
 .custom-navbar {
-  
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
   width: 70%;
   min-width: 500px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;
-  background-color: rgba(255, 255, 255, 0.05); /* subtle transparent background */
-  backdrop-filter: blur(8px); /* optional blur effect */
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  
-  
+  padding: 1rem 3rem;
 }
 
-  
-
-.navcontainer{
-  
+.navcontainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
-
-.custom-navbar {
-  margin-left: 0; /* align to left */
-}
-
-.custom-navbar .nav-link {
-  color: white;
-  padding: 0.5rem 1rem;
-}
-
-.custom-navbar .nav-link:hover {
-  color: #00ffff;
-  text-decoration: underline;
-}
-
-.custom-navbar .navbar-brand {
-  color: white;
-}
-
- .navbar-nav{
-  
+.intro_linksto{
+ 
   display: flex;
   flex-direction: row;
+  padding: 60px;
+  
+  height: 70vh;
+  margin-top: 30px;
   align-items: center;
   justify-content: center;
-
-  
- }
-
- .nav-item {
-  margin: 0 10px;
 }
-
-
-
-.about {
-  
-  display: flex;
-  width: 100%;
-   height: auto;
-   padding-top: 4rem;
-  
+.intro{
+  width: 50%;
 }
-
-.left_column {
+.linksto{
+  width: 50%;
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  width: 20%;
-  padding: 1rem;
-  border-right: 1px solid rgba(255, 255, 255, 0.2); /* vertical line */
-  box-sizing: border-box;
-   border-right: 2px solid #233554;
-  padding-right: 1rem;
+  
+}
+.introContent{
+  border-left: 2px solid white;
+  padding: 30px;
+}
+.welcome{
+  
+  font-size: 7rem;
+  padding-left: 20px;
+  font-weight: bolder;
+  color: #CCD6F6;
+}
+.introval{
+  padding: 30px;
+
+}
+.chaitanya{
   color: #64FFDA;
-  font-weight: 600;
 }
-
-.right_column {
-  width: 80%;
-  padding: 1rem;
-  box-sizing: border-box;
-}
-
-.aboutmedescription{
-  padding-bottom: 2rem;
+.dot{
+  color: #64FFDA;
 }
 .aboutme{
-  color:#64FFDA;
  
+  padding: 15px;
+  font-size: 1.3rem;
+   font-weight: bolder;
+    color: #CCD6F6;
 }
-
-.boldindescription{
-  color:#3EF4C5;
-  font-weight:bolder;
+.project{
+  
+  padding: 15px;
+  font-size: 1.3rem;
+   font-weight: bolder;
+    color: #CCD6F6;
 }
-
+.resume{
+  
+  padding: 15px;
+  font-size: 1.3rem;
+  font-weight: bolder;
+   color: #CCD6F6;
+}
+.aboutmedescription_cont{
+ 
+  margin-top:70px;
+  display: flex;
+  flex-direction: row;
+  
+}
 .aboutmedescription{
-  color:#CCD6F6;
-  line-height: 1.6;
-   letter-spacing: 0.5px ;
-   font-size: clamp(1rem, 2vw, 1.2rem);
+color: #64FFDA;
+width: 20%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+font-size: 1.5rem;
+font-weight: bolder;
+}
+.aboutmedescription_val{
+  font-size: 1.2rem;
+  padding: 40px;
+  color: #CCD6F6;
+  width: 80%;
+
+
+}
+.boldhighlight{
+  color: #64FFDA;
+}
+.projectsdescription_cont{
+ 
+
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
 }
 
-/* Medium screens: tablets and small laptops */
-@media (max-width: 992px) {
+.projectsdescription{
+
+color: #64FFDA;
+width:20%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+font-size: 1.5rem;
+font-weight: bolder;
+}
+.projectsdescription_val{
+   font-size: 1.2rem;
+  padding: 40px;
+  color: #CCD6F6;
+  width: 80%;
+}
+.techstack{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  padding-top: 10px;
+}
+.techstack1 {
+  display: flex;
+  border: 2px solid white;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #64FFDA;
+  background-color: transparent;
+  box-shadow: 0 0 10px rgba(100, 255, 218, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.techstack1:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+  color: white;
+  box-shadow: 0 0 20px rgba(100, 255, 218, 0.6);
+  transform: translateY(-3px) scale(1.05);
+}
+.tradegenix{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.bi-box-arrow-up-right, .bi-github{
+ padding-left: 20px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ transition: all 0.3s ease;
+
+}
+
+.bi-box-arrow-up-right:hover, .bi-github:hover{
+    color: #64FFDA;
+    transform: translateY(-3px) scale(1.05);
+}
+.keyfeatures{
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+/* ====== Responsive Adjustments ====== */
+
+/* For screens up to 1200px (Laptops/Tablets) */
+@media (max-width: 1200px) {
   .custom-navbar {
-    width: 90%;
-    flex-direction: column;
-    align-items: center;
+    width: 85%;
     padding: 1rem 2rem;
   }
 
-  .navbar-nav {
-    flex-direction: row;
-    margin-top: 1rem;
-  }
-
-  .nav-item {
-    margin: 8px 0;
-  }
-
-  .about {
+  .intro_linksto {
+    padding: 40px;
+    height: auto;
     flex-direction: column;
-    padding-top: 2rem;
-  }
-
-  .left_column, .right_column {
-    width: 100%;
-    border-right: none;
-    padding: 1rem 0;
     text-align: center;
   }
 
-  .left_column {
-    border-bottom: 2px solid #233554;
+  .intro, .linksto {
+    width: 100%;
+  }
+
+  .welcome {
+    font-size: 5rem;
+  }
+
+  .techstack {
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }
 
-
-/* Small screens: mobile phones */
-@media (max-width: 600px) {
-  .name {
-    font-size: 2.2rem;
-    text-align: center;
-  }
-
-  .aspiring {
-    font-size: 1.1rem;
-    text-align: center;
-  }
-
+/* For screens up to 768px (Tablets & Large Phones) */
+@media (max-width: 768px) {
   .custom-navbar {
-    width: 95%;
     min-width: unset;
+    flex-direction: row;
+    width: 90%;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+  }
+
+  .intro_linksto {
+    padding: 30px;
+  }
+
+  .introContent {
+    padding: 20px;
+  }
+
+  .welcome {
+    font-size: 4rem;
+  }
+
+  .aboutmedescription_cont,
+  .projectsdescription_cont {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aboutmedescription,
+  .projectsdescription {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .aboutmedescription_val,
+  .projectsdescription_val {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .tradegenix {
+    font-size: 1.3rem;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+/* For screens up to 480px (Phones) */
+@media (max-width: 480px) {
+  .custom-navbar {
+    flex-direction: row; /* as requested: keep row on small devices */
+    padding: 1rem;
+    width: 95%;
   }
 
   .icons {
     gap: 20px;
   }
 
-  .cursor-glow {
-    display: none; /* Optional: hide the glow effect on mobile */
+  .welcome {
+    font-size: 2.5rem;
   }
 
-  .aboutmedescription {
+  .introval {
+    padding: 15px;
+    font-size: 0.95rem;
+  }
+
+  .aboutme, .project, .resume {
     font-size: 1rem;
-    padding: 1rem 0;
-    text-align: justify;
+    padding: 10px;
+  }
+.linksto{
+  padding-top: 100px;
+}
+  .techstack {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
   }
 
-  .wholeContainer {
-    padding: 1rem;
+  .techstack1 {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+  }
+
+  .bi-box-arrow-up-right, .bi-github {
+    padding-left: 10px;
+  }
+
+  .tradegenix {
+    font-size: 1.1rem;
+    padding: 5px;
+    flex-direction: column;
+    gap: 5px;
   }
 }
-
-
