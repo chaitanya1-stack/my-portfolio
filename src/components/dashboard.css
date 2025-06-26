@@ -81,7 +81,7 @@ html, body {
   flex-direction: row;
   padding: 60px;
   
-  height: 70vh;
+  height: 90vh;
   margin-top: 30px;
   align-items: center;
   justify-content: center;
@@ -371,5 +371,75 @@ font-weight: bolder;
     padding: 5px;
     flex-direction: column;
     gap: 5px;
+  }
+}
+/* For screens between 300px and 480px (Very Small Phones) */
+@media (max-width: 380px) {
+  .custom-navbar {
+    flex-direction: row;
+    width: 100%;
+    padding: 0.7rem 1rem;
+    gap: 10px;
+  }
+
+  .name1 {
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
+  .icons i {
+    font-size: 1.2rem;
+  }
+
+  .welcome {
+    font-size: 2rem;
+    padding-left: 10px;
+  }
+
+  .introval {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+
+  .introContent {
+    padding: 15px;
+    border-left: 1px solid white;
+  }
+
+  .aboutme, .project, .resume {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .linksto {
+    padding-top: 40px;
+    flex-direction: column;
+    gap: 10px;
+    
+  }
+
+  .techstack {
+    gap: 6px;
+  }
+
+  .techstack1 {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+
+  .tradegenix {
+    font-size: 1rem;
+    padding: 4px;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .aboutmedescription_val, .projectsdescription_val {
+    padding: 15px;
+    font-size: 1rem;
+  }
+
+  .aboutmedescription, .projectsdescription {
+    font-size: 1.2rem;
   }
 }
