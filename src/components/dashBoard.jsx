@@ -2,11 +2,21 @@ import React, { useState, useEffect, useRef  } from 'react';
 import '../components/dashboard.css'; 
 import AnimatedArrow from './animatedArrow'; 
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import LoadingAnimation from './loadingAnimation'; // Adjust path if needed
+
+
+
+
 
 
 
 const Dashboard = () => {
   const [position, setPosition] = useState({ x: -100, y: -100 });
+  const [loading, setLoading] = useState(true);
+
+  
+
+
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -15,6 +25,18 @@ const Dashboard = () => {
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
+
+
+useEffect(() => {
+  const timer = setTimeout(() => {
+    setLoading(false);
+  }, 2500); 
+
+  return () => clearTimeout(timer);
+}, []);
+
+
+
 
 //  for scrolling 
   const aboutRef = useRef(null);
@@ -27,6 +49,9 @@ const scrollToSection = (ref) => {
   }
 };
 
+ if (loading) {
+  return <LoadingAnimation />;
+}
 
 
   return (

@@ -11,12 +11,24 @@ html, body {
   scroll-behavior: smooth;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .wholeContainer {
   min-height: 200vh;
   width: 100vw;
   padding: 2rem;
   background-color: #0A192F;
   color: #ffffff;
+  animation: fadeIn 1s ease forwards;
 }
 
 .name1 {
@@ -379,7 +391,7 @@ font-weight: bolder;
     flex-direction: row;
     width: 100%;
     padding: 0.7rem 1rem;
-    gap: 10px;
+    gap: 1px;
   }
 
   .name1 {
@@ -443,3 +455,5 @@ font-weight: bolder;
     font-size: 1.2rem;
   }
 }
+
+
