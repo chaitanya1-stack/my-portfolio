@@ -42,6 +42,7 @@ useEffect(() => {
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
   const resumeRef = useRef(null);
+  const scrollRef = useRef(null);
 
 const scrollToSection = (ref) => {
   if (ref.current) {
@@ -55,10 +56,11 @@ const scrollToSection = (ref) => {
 
 
   return (
+    <div>
 
 
     
-    <div className="wholeContainer">
+    <div className="wholeContainer" ref={scrollRef}>
 
        <div
         className="cursor-glow"
@@ -67,7 +69,7 @@ const scrollToSection = (ref) => {
 
 
 
-      <div className="navcontainer">
+      <div className="navcontainer"  >
         <div className="custom-navbar">
           <div className="name1">CHAITANYA KUMAR</div>
 
@@ -102,7 +104,8 @@ const scrollToSection = (ref) => {
              <div className="projectdiv" onClick={() => scrollToSection(projectsRef)} ><AnimatedArrow/><div className="project">Projects</div></div>
              <div className="resumediv" onClick={() => scrollToSection(resumeRef)} ><AnimatedArrow/><div className="resume">Resume</div></div>
             </div>
-
+    
+    
 
         </div>
 
@@ -125,7 +128,7 @@ const scrollToSection = (ref) => {
         <div className="projectsdescription_cont" ref={projectsRef}>
           <div className="projectsdescription">Projects</div>
           <div className="projectsdescription_val">
-            <div className="tradegenix">TRADEGENIX–Stock Market Intelligence Dashboard <i class="bi bi-box-arrow-up-right"></i> <i class="bi bi-github"></i></div>
+            <div className="tradegenix"><strong className="tradegenix1">TRADEGENIX</strong>–Stock Market Intelligence Dashboard <i class="bi bi-box-arrow-up-right"></i> <i class="bi bi-github"></i></div>
             <div className="tradegenixdescription"> <p>TradeGeniX is a full-stack stock market dashboard designed for real-time financial analysis and visualization. It leverages third-party APIs like Finnhub to fetch live stock data, company overviews, and historical price charts—empowering users to make data-driven investment decisions.</p>
             
             <p className="keyfeatures">Key Features :</p>
@@ -146,12 +149,68 @@ const scrollToSection = (ref) => {
             </div>
            
        </div>
+
+
+
+       <div className="tradegenix"><strong className="tradegenix1">learnDSA</strong>– Full-Stack DSA Practice Tracke<i class="bi bi-box-arrow-up-right"></i> <i class="bi bi-github"></i></div>
+            <div className="tradegenixdescription"> <p>learnDSA is a full-stack web application that enables users to effectively track and manage their Data Structures and Algorithms (DSA) progress through a clean, personalized dashboard.</p>
+            
+            <p className="keyfeatures">Key Features :</p>
+            <p>Secure user authentication with JWT for protected, personalized access.</p>
+            <p>Full CRUD functionality to add, update, and delete DSA problems with tags (solved, unsolved, bookmarked).</p>
+            <p>Persistent storage using MongoDB to ensure user data is never lost across sessions.
+
+</p>
+            <p>Fully responsive and interactive UI built with React and modular CSS</p>
+            <p> Scalable backend with RESTful APIs (Node.js + Express); future-ready for Codeforces API integration.</p>
+
+            <div className="techstack">
+              <div className="techstack1">React.js</div>
+              <div className="techstack1"> JWTauth</div>
+              <div className="techstack1">Node.js</div>
+              <div className="techstack1">Express.js</div>
+              <div className="techstack1"> MongoDB</div>
+              <div className="techstack1"> REST API </div>
+              
+            </div>
+           
+       </div>
+
+
+       <div className="tradegenix"><strong className="tradegenix1">Online Multi-Language Compiler</strong>-Browser-Based Code Execution Platform<i class="bi bi-box-arrow-up-right"></i> <i class="bi bi-github"></i></div>
+            <div className="tradegenixdescription"> <p>This full-stack application enables users to write, compile, and run code in C++, Python, and Java directly in the browser with real-time output and custom input support.</p>
+            
+            <p className="keyfeatures">Key Features :</p>
+            <p>Backend service to securely compile and execute C++, Python, and Java using child_process.</p>
+            <p>Integrated CodeMirror editor for in-browser, syntax-highlighted code editing.</p>
+            <p>Temporary file creation with unique IDs and cleanup to ensure secure execution.</p>
+            <p>Robust error handling and input validation to prevent code injection or crashes.</p>
+            <p>CORS-enabled backend with Express static routing to serve frontend and enable cross-origin access.</p>
+
+            <div className="techstack">
+              <div className="techstack1">Child_process</div>
+              <div className="techstack1">  Crypto</div>
+              <div className="techstack1">Node.js</div>
+              <div className="techstack1">Express.js</div>
+              <div className="techstack1"> CodeMirror</div>
+              <div className="techstack1"> CORS </div>
+              
+            </div>
+           
+       </div>
           </div>
         </div>
      
-     
+    
+
 
       
+    </div>
+
+    <div className="floating-bottom-bar">
+  <div className="floating-bottom-bar-element" onClick={() => scrollToSection(scrollRef)}><div  class="arrow up"></div><div className="scrolltotop">Scroll to Top</div></div>
+    </div>
+
     </div>
   );
 };
